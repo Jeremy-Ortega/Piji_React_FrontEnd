@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 
-export default function Header() {
+export default function PijiHeader() {
   const today = new Date().toLocaleDateString('en-US', {
     weekday: 'short',
     month: 'long',
@@ -18,12 +18,12 @@ export default function Header() {
 
       {/* Middle: Date */}
       <div className="header-middle">
-        <p className="date-text">{today}</p>
+        <p className="date-text" class="text-xl font-semibold">{today}</p>
       </div>
 
       {/* Right: Notification and Profile */}
       <div className="header-right">
-        <div className="notification">🔔</div>
+        <div className="notification">⩍</div>
         <div className="profile">
           <img
             src="https://i.pravatar.cc/40"

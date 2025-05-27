@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f9fafb;
+  background-color: rgb(189, 217, 198 );
   padding: 1rem 2rem;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid rgb(189, 217, 198 );
 }
 
 .header-left,
@@ -16,7 +16,8 @@
 
 .search-input {
   padding: 0.5rem 1rem;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #e6eaee;
+  background-color: rgb(242, 255, 246);
   border-radius: 0.375rem;
   font-size: 1rem;
 }
