@@ -1,5 +1,6 @@
 import {NavbarMinimalColored} from "../layouts/mantine/sidebar.jsx";
 import PijiHeader from "../layouts/components/Header.jsx";
+import {IconCalendarPlus, IconFlag, IconMessageCircleQuestion, IconUsers} from '@tabler/icons-react'
 import { Button } from '@mantine/core';
 import { Badge } from '@mantine/core';
 import { Link } from '@inertiajs/react';
@@ -16,15 +17,14 @@ export default function Eto() {
         <div class="flex flex-col w-full" >
             <PijiHeader/> 
 
-            <div class="flex justify-between items-center p-[10px] piji-green-2"  style={{ padding: "10px 20px"}}> 
+            <div class="flex justify-between items-center piji-green-2"  style={{ padding: "15px 20px"}}> 
                  <h1 class="text-5xl font-bold"> Dashboard</h1>
-                 <Link href="/create" class="flex px-10 py-4 text-xl bg-amber-50 rounded-xl drop-shadow-md" style={{ padding:"10px 35px"}}>Create +</Link>
+                 <Link href="/create" class="flex text-xl bg-amber-50 rounded-xl drop-shadow-md" style={{ padding:"10px 35px"}}>Create +</Link>
             </div>
 
-
             <div>
-                <div style={{margin:"10px", padding:"3z0px 15px "}} class="bg-white flex flex-row flex-col w-[55%] h-[350px] rounded-3xl drop-shadow-md gap-6 " >
-                 <div class="flex flex-col">
+                <div style={{margin:"10px", padding:"30px 20px "}} class="bg-white flex flex-row w-[750px] h-[350px] rounded-3xl drop-shadow-md " >
+                  <div class="flex flex-col gap-7">
                   <div class="flex flex-col">
                       <h1 class="text-3xl font-extrabold"> Hi, {name}Juan!</h1>
                       <p class="text-2xl font-semibold">
@@ -33,24 +33,20 @@ export default function Eto() {
                       </p>
                   </div>
 
-                  <div class="flex flex-col gap-5">
+                  <div class="flex flex-row">
+                    <div class="grid grid-cols-2 w-[400px] gap-2">
+                      <Link className="flex items-center gap-2" ><IconCalendarPlus size={24} color="royalblue"> </IconCalendarPlus>Check Calendar </Link>
+                      <Link className="flex gap-" ><IconUsers size={24} color="green"> </IconUsers>Check Collaboration projects</Link>
+                      <Link className="flex items-center gap-2" ><IconFlag size={24} color="darkorange"> </IconFlag>Check Urgent Tasks</Link>
+                      <Link className="flex items-center gap-2" ><IconMessageCircleQuestion size={24}> </IconMessageCircleQuestion>Ask Piji</Link>
+                    </div>
+                    
+                  </div> 
+              </div>    
 
-                    {/* gawin ko nalang din to na column */}
-                      <div class="flex flex-row gap-30">
-                        <Link>ⓘ Check Calendar</Link> 
-                        <Link>ⓘ Check Collaboration <br/>projects</Link>
-                      </div>
-
-                      <div class="flex flex-row gap-30">
-                        <Link>ⓘ Check Urgent Tasks</Link> 
-                        <Link>ⓘ Ask Piji</Link>
-                      </div>           
-                    </div>        
-                </div>
-
-                  <div class="flex object-cover">
-                  <img src="/img/PIJI_SPRITE.png" alt="Sprite" class="w-45% h-45% rounded-lg  object-cover scale-x-[-1]"/>
-                  </div>
+                  <div style={{margin:"-100px 0 0 0"}}  class="flex object-cover w-[450px] h-[400px] overflow-visible">
+                  <img src="/img/PIJI_SPRITE.png" alt="Sprite" class="w-100% h-100% rounded-lg  object-cover overflow-visible scale-x-[-1]"/>
+                
                 </div>
 
 
@@ -63,18 +59,18 @@ export default function Eto() {
         </div>
     </div>
   </div>
-
+  </div>                   
   );
 }
 
 Eto.layout = (page) => page;
 
-// import {SliderHover} from "../layouts/mantine/slider.jsx";
-// import { Button } from '@mantine/core';
-//         {/* <Button variant="filled" color="red">Button</Button>; */}
+{/* // import {SliderHover} from "../layouts/mantine/slider.jsx";
+// import { Button } from '@mantine/core'; */}
+{/* <Button variant="filled" color="red">Button</Button>; */}
 
 
-    // <div style={{ padding: '2rem' }}>
+    {/* // <div style={{ padding: '2rem' }}>
       
     //   <h1>Welcome to Mantine UI</h1>
 
@@ -83,5 +79,5 @@ Eto.layout = (page) => page;
       // <Badge color="blue">Badge</Badge>
 
     //   <SliderHover/>
-    // </div>
+    // </div> */}
 
