@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 //     return inertia('Dashboard');
 // });
 
-Route::inertia('/','Eto');
+Route::inertia('/','Dashboard');
 Route::inertia('/dashboard','Dashboard');
 
 // Route::get('/about', function () {
@@ -17,6 +17,7 @@ Route::inertia('/dashboard','Dashboard');
 
 Route::get('/about', function () {
     logger('About route hit!');
-    return Inertia::render('Default/Landing', ['name' => 'mike']);
+    return Inertia::render('Landing');
 });
 
+//     return Inertia::render('Landing', ['name' => 'mike']);

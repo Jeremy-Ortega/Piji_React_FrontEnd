@@ -1,5 +1,8 @@
 import React from 'react';
 import './header.css';
+import { IconZoom, IconBell } from '@tabler/icons-react';
+import { Link } from '@inertiajs/react';
+
 
 export default function PijiHeader() {
   const today = new Date().toLocaleDateString('en-US', {
@@ -12,8 +15,10 @@ export default function PijiHeader() {
   return (
     <header className="app-header">
       {/* Left: Search box */}
-      <div className="header-left">
-        <input type="text" placeholder="Search..." className="search-input" />
+      <div className="header-left search-input">
+
+        <Link>< IconZoom size={29}/> </Link>
+        <input type="text" placeholder=" Search..."  class="w-full h-[20px]" />
       </div>
 
       {/* Middle: Date */}
@@ -22,15 +27,23 @@ export default function PijiHeader() {
       </div>
 
       {/* Right: Notification and Profile */}
-      <div className="header-right">
-        <div className="notification">⩍</div>
+      <div className="header-right" style={{margin:"0 90px 0 0"}}>
+        
+        <div className="notification">
+          <Link>< IconBell size={29}/> </Link>
+        </div>
         <div className="profile">
+
+
           <img
             src="https://i.pravatar.cc/40"
             alt="Profile"
             className="profile-pic"
           />
-          <span className="profile-name">John Doe</span>
+          <div>
+            <span className="profile-name">John Doe</span>
+            <p class="font-md">Student</p>
+          </div>
         </div>
       </div>
     </header>
