@@ -9,8 +9,8 @@ import '@mantine/core/styles.css';
 
 createInertiaApp({
   resolve: name => {
-    const pages = import.meta.glob('./Pages/**/*.jsx', { eager: true });
-    let page = pages[`./Pages/${name}.jsx`];
+    const pages = import.meta.glob('./pages/**/*.jsx', { eager: true });
+    let page = pages[`./pages/${name}.jsx`];
     
     page.default.layout = page.default.layout || ((page) => <Layout children={page}
     />);

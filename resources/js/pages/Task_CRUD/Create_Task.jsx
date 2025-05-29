@@ -1,13 +1,12 @@
-import {NavbarMinimalColored} from "../layouts/mantine/sidebar.jsx";
-import PijiHeader from "../layouts/components/Header.jsx";
-import PijiHeader2 from "../layouts/components/Header2.jsx";
+import {NavbarMinimalColored} from "../../layouts/mantine/sidebar.jsx";
+import PijiHeader from "../../layouts/components/Header.jsx";
+import PijiHeader2 from "../../layouts/components/Header2.jsx";
 import {IconCalendarPlus, IconFlag, IconMessageCircleQuestion, IconUsers} from '@tabler/icons-react'
 import { Link } from '@inertiajs/react';
 
 
 
-
-export default function Login() {
+export default function Create_Task() {
   return (
     <div class="piji-green">
     <div className="flex flex-row w-full">
@@ -15,7 +14,7 @@ export default function Login() {
 
         <div class="flex flex-col w-full" >
             <PijiHeader/> 
-            <PijiHeader2 title="Login"/>
+            <PijiHeader2 title=" Create Task"/>
 
                 {/* might as well gawing component na tong part */}
     
@@ -28,4 +27,4 @@ export default function Login() {
   );
 }
 
-Login.layout = (page) => page;
+Create_Task.layout = (page) => page;

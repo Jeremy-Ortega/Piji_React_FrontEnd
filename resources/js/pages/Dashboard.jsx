@@ -1,8 +1,7 @@
 import {NavbarMinimalColored} from "../layouts/mantine/sidebar.jsx";
 import PijiHeader from "../layouts/components/Header.jsx";
+import PijiHeader2 from "../layouts/components/Header2.jsx";
 import {IconCalendarPlus, IconFlag, IconMessageCircleQuestion, IconUsers} from '@tabler/icons-react'
-import { Button } from '@mantine/core';
-import { Badge } from '@mantine/core';
 import { Link } from '@inertiajs/react';
 
 
@@ -16,11 +15,7 @@ export default function Dashboard() {
 
         <div class="flex flex-col w-full" >
             <PijiHeader/> 
-
-            <div class="flex justify-between items-center piji-green-2"  style={{ padding: "15px 20px"}}> 
-                 <h1 class="text-5xl font-bold"> Dashboard</h1>
-                 <Link href="/create" class="flex text-xl bg-amber-50 rounded-xl drop-shadow-md" style={{ padding:"10px 35px"}}>Create +</Link>
-            </div>
+            <PijiHeader2 title="Dashboard"/>
 
                 {/* might as well gawing component na tong part */}
             <div>
@@ -62,7 +57,7 @@ export default function Dashboard() {
   );
 }
 
-Eto.layout = (page) => page;
+Dashboard.layout = (page) => page;
 
 {/* // import {SliderHover} from "../layouts/mantine/slider.jsx";
 // import { Button } from '@mantine/core'; */}
@@ -78,5 +73,9 @@ Eto.layout = (page) => page;
       // <Badge color="blue">Badge</Badge>
 
     //   <SliderHover/>
-    // </div> */}
+    // </div> 
+    // 
+    // import { Button } from '@mantine/core';
+import { Badge } from '@mantine/core';
+    // */}
 

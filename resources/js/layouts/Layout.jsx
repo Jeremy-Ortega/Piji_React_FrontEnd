@@ -4,10 +4,10 @@ import '../../css/app.css';
 export default function Layout({children}){
     return <>
         <header>
-            <nav class="header-content justify-between flex ">
+            <nav className="header-content justify-between flex ">
                 <Link href="/" class="header-content text-white" >home</Link>
                 
-                <Link href="/a"  class="header-content text-white">create</Link>
+                <Link href="/Dashboard"  class="header-content text-white">create</Link>
                 
             </nav>
         </header>

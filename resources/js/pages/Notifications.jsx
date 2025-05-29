@@ -7,7 +7,7 @@ import { Link } from '@inertiajs/react';
 
 
 
-export default function Login() {
+export default function Notifications() {
   return (
     <div class="piji-green">
     <div className="flex flex-row w-full">
@@ -15,12 +15,12 @@ export default function Login() {
 
         <div class="flex flex-col w-full" >
             <PijiHeader/> 
-            <PijiHeader2 title="Login"/>
+            <PijiHeader2 title="Notifications"/>
 
                 {/* might as well gawing component na tong part */}
     
 
-        <h1>Login</h1>
+        <h1>Register</h1>
 
         </div>
     </div>
@@ -28,4 +28,4 @@ export default function Login() {
   );
 }
 
-Login.layout = (page) => page;
+Notifications.layout = (page) => page;
