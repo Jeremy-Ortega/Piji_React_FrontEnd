@@ -7,7 +7,7 @@ import { Link } from '@inertiajs/react';
 
 
 
-export default function User_Register() {
+export default function Register() {
   return (
     <div class="piji-green">
     <div className="flex flex-row w-full">
@@ -28,4 +28,4 @@ export default function User_Register() {
   );
 }
 
-User_Register.layout = (page) => page;
+Register.layout = (page) => page;

@@ -7,8 +7,13 @@ use Illuminate\Support\Facades\Route;
 Route::inertia('/','Landing');
 
 // Route::inertia('/','Dashboard'); Auth
-Route::inertia('/Login','Login');
-Route::inertia('/Register','User_Register');
+Route::get('/login', function () {
+    return Inertia::render('Login');
+});
+
+Route::get('/register', function () {
+    return Inertia::render('Register');
+});
 
 // Main pages
 Route::inertia('/dashboard','Dashboard');
